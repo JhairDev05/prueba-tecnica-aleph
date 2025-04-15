@@ -23,18 +23,6 @@ function calcularPasos(num) {
     if(num == 1 ) return 0;
 
     let anillo = Math.ceil((Math.sqrt(num) - 1 ) / 2)
-
-    let lado = 2 * anillo + 1
-
-    let max = lado * lado
-    let posicion = max - num
-
-    let distancia = posicion % (lado - 1)
-
-    let puntoMedio = (lado - 1) / 2
-    let ditanciaDesdeCentro = Math.abs(distancia - puntoMedio)
-
-    return anillo + ditanciaDesdeCentro;
 }
 
 console.log(calcularPasos(1));    // 0
